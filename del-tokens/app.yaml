@@ -1,0 +1,17 @@
+runtime: nodejs14
+vpc_access_connector:
+  name: projects/single-frame-328518/locations/europe-west3/connectors/app-engine-connector
+env_variables:
+  # PUBSUB_TOPIC: projects/single-frame-328518/topics/delete-user-token-pub
+  PROJECT_ID: 'single-frame-328518'
+  PORT: '8080'
+  # pubsub
+  PUB_SUB_TOPIC_NAME: 'projects/cobalt-carver-329023/topics/myRunTopic'
+  PUB_SUB_PROJECT_ID: 'cobalt-carver-329023'
+  # This token is used to verify that requests originate from your
+  # application. It can be any sufficiently random string.
+  VERIFICATION_TOKEN: 'abc123'
+  # sql
+  SQL_HOST: '10.66.192.3'
+  SQL_PORT: '3306'
+  SQL_DATABASE: 'subscription'

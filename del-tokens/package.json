@@ -1,0 +1,122 @@
+{
+  "name": "gcp-task",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon --inspect server.js",
+    "start": "node app.js",
+    "lint:base": "eslint --ignore-path ../.gitignore --fix",
+    "lint": "npm run lint:base -- .",
+    "test:base": "jest --colors --coverage --verbose",
+    "test": "npm run test:base -- -c jest.config.js --verbose",
+    "test:unit": "npm run test:base -- -c jest.config.unit.js",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.18.1",
+    "@google-cloud/secret-manager": "^3.10.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest-extended": "^1.1.0",
+    "lint-staged": "^11.2.3",
+    "logging": "git+https://github.com/talanaji/logging.git",
+    "mysql2": "^2.3.2",
+    "node-cache": "^5.1.2",
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^10.0.0",
+    "@types/jest": "^27.0.2",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-jsdoc": "^32.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.1.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^1.18.2",
+    "supertest": "^4.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run test:unit",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-commit": "git update-index --again"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:base",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "plugins": [
+      "jsdoc",
+      "prettier"
+    ],
+    "extends": [
+      "standard",
+      "prettier",
+      "plugin:jsdoc/recommended"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "rules": {
+      "prettier/prettier": [
+        "warn"
+      ],
+      "space-before-function-paren": "off",
+      "keyword-spacing": "off",
+      "linebreak-style": [
+        "error",
+        "unix"
+      ]
+    },
+    "ignorePatterns": [
+      "coverage",
+      "**/node_modules"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 100,
+    "semi": true
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        2,
+        "never",
+        [
+          "start-case",
+          "pascal-case"
+        ]
+      ]
+    }
+  }
+}
