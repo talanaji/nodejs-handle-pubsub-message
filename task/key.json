@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cobalt-carver-329023",
+  "private_key_id": "fc16851d79c2e9fbb9e59459eef19f5c14ebe5e5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDFgZHQynCQeG7C\nRcECSwrfLhzLGlltq2kBzvU6nZYH6y+sKtiSVyKV53Z0hLutL/vNi7lst9xSGTyl\nVQ/FfSsCmAaDHFUF1z1EAh8RRINkpG4Mz+yu0HqtRfx5N+wgoT4QBIpXRQhyPs7q\nvJDCQM1smpNsavJKEDkT15BsHEvJahZut93m6693OQVNE97rLxaP5/lxEibL9KK3\n3uft3es4gsNYTdpeXcotHdCRQ3semeIENVuqjV4/wGcDAA2aemp5+C9/ToEwdXVY\ndcDYevsk9STZetKeZMkblr7LZTiwpl24r6YFtnhAuwAjWfGsOX5m/I1MJF4D4e/3\nXo5GazcHAgMBAAECggEADSHzVdx069fkl9/Dsi9wNR/S6hrB67dnX43pCdehoSKQ\nkTrPtLqJ6HxmbxMsvk3/yPT4XhP2ckt1GCwJEbrwnOPXIJx5KmhbjZ9m4zyL6g/y\nG1r8ZDFYZUro7nYUw6Srd+AwnK+D6Y8zx5fE0Y3PVJNz2wePcPPimU2oYwl/01zj\nEHP4ENQbeuaFiIpXQ4ncicwLoN2eA02W9FGlX4A6IAMvrjwFqj9zplr8HTy7GISK\nY5WrxQwPNsdRVbtFwB3c1zfjKs1hsYp3DUuu6zvXc1IwM/0vYsZI2nNDMJr4m3mc\n/2/KRprT2m2Xk2TtEQcT2vLUBOrGUVRMRjguAVb/fQKBgQDpijRcipId6XTtqUzw\nMc4uxP+ATl0CMg9ro/Tde5CWsH42amqKv25TariPYkLqABcckhif5Ddap/J3X5BK\nAH+f0lL9hPkH1aUbW/YS143c0F5UdQCWUl4uux7+Il3F5JNsFQuuKC9nSoTCWWbU\nIoGyEbGk8Vo6lipkOUcm/Y5JjQKBgQDYgDUzbXth8fDI5edcQiOcUUMzLfLyFXH2\ndL8G6z/hr2+iWliBLmTB6deBu6mSr1MspPcz9py6xjxifzIEPzKh/FgvZ8ahyGb1\n5u5Jc7OnS16XlfvihdcNSfqJqeIaO+WcWpb/CeGOW+TIeoYwlJhhqlvPmJ7pHdIZ\nX6izLx674wKBgFKIpjKiQjtR+yHWuDsWzvAWbNlyWEpjWLHI0svHVHT80M34U8jP\nGHVgfPMnXdCG0aQmOY+gPrPKMNVhL4QHoxLfaLbx3HSZW21M1a0ZAqir9vpQEzIM\nz/4h4TUc/hjmy/bhhSw6RW5ylnJ81+tWepFs0WQia6nS0g5zc6Li7vstAoGAdYc7\n2jwvw57sgJLVwu6gmEZA/bKO9T4RDKKZ5O6mUiTDrFXxP8doqSABforaZifJNi4j\niFDzCi19MFcuVsHcAbWURb/HQ6IfypPffX5S45l1s0KXZ4QSl0M2v666cFVds0A2\nQiMiD/7wtqhU2mCATFyH1K1cbt5iZKXaVdNZktMCgYAqweE0aDYMEZ5FDl5MlXTP\nk+Zv1ptnSzXNA/g62+K1Ytlfq5qDXtbQI/pnjis4nQqtgFqaC6TlzI9QA3f0t2EO\nr4F7vJP/aI2dwpQG51LDQrghT8TgPXV9qwdC5HAqMWbO0a463szSQGwXrqR7Dtf0\nGD2BrUZBBKs3CFJpikN8Dg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "appserviceaccount@cobalt-carver-329023.iam.gserviceaccount.com",
+  "client_id": "109071226761960527441",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/appserviceaccount%40cobalt-carver-329023.iam.gserviceaccount.com"
+}

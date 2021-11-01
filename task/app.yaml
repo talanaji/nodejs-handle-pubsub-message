@@ -1,0 +1,13 @@
+runtime: nodejs
+env: flex
+manual_scaling:
+  instances: 1
+env_variables:
+  SENDGRID_API_KEY: "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"
+  PROJECT_ID: "cobalt-carver-329023"
+  DATASET_NAME: "message_dataset"
+  TABLE_NAME: "messages"
+  BUCKET_NAME: "templates-email-bkt"
+  PUBSUB_TOPIC: projects/single-frame-328518/topics/delete-user-token-pub
+  PUBSUB_VERIFICATION_TOKEN: 123456
+

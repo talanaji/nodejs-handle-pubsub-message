@@ -1,0 +1,26 @@
+steps:
+  # Build the container image
+  - name: "gcr.io/cloud-builders/docker"
+    dir: "task"
+    args: ["build", "-t", "gcr.io/cobalt-carver-329023/readpubsubmsg1", "."]
+
+  # Push the container image to Container Registry
+  - name: "gcr.io/cloud-builders/docker"
+    dir: "task"
+    args: ["push", "gcr.io/cobalt-carver-329023/readpubsubmsg1"]
+
+  # Deploy container image to Cloud Run
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    dir: "task"
+    entrypoint: gcloud
+    args:
+      [
+        "beta",
+        "app",
+        "deploy",
+        "app.yaml", 
+        "--image-url",
+        "gcr.io/cobalt-carver-329023/readpubsubmsg1",  
+      ]
+images:
+  - gcr.io/cobalt-carver-329023/readpubsubmsg1
